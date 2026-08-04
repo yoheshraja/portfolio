@@ -1,0 +1,37 @@
+header{
+    height: 100px;
+    background-color: rgb(111, 84, 230);
+    width: 100%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  40px;
+}
+
+/* .unorderlist{
+    display: flex;
+    gap: 10px;
+}
+.unorderlist li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+} */
+.title{
+    text-decoration: none;
+    color: rgb(71, 66, 66);
+}
+.unorderlist{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.unorderlist a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}

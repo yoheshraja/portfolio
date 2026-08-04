@@ -1,0 +1,13 @@
+.Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.Image img{
+      width: 70%;
+      margin: 20px auto;
+}
+.Details h3,p{
+    line-height: 1.6;
+}

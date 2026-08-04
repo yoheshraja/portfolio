@@ -1,0 +1,65 @@
+.profileContain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height:1.4;
+    height: 100vh !important;
+}
+.profileDetails{
+    height: 200px;
+    width: 450px;   
+}
+.profileDetails button{
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+    background:linear-gradient(90deg,rgb(160, 160, 255),rgb(49, 49, 197));
+    transition: all 0.3s linear;
+}
+.profileDetails button:hover{
+    background:linear-gradient(90deg,rgb(49, 49, 197),rgb(127, 127, 245));
+    color: white;
+}
+.profileDetails a{
+    text-decoration: none;
+    color:black
+}
+.profileImage {
+    background-color: #fff;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s linear;
+    color: black;
+}
+.profileImage img{
+    border-radius: 50%;
+    width: 100%;
+}
+.Animation{ 
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    animation-name:profileani;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(90deg,rgb(245, 69, 69),rgb(21, 142, 255)); 
+}
+.Animation:hover{
+     background: linear-gradient(90deg,rgb(21, 142, 255),rgb(245, 69, 69)); 
+}
+.name {
+    color: red;
+}
+.intro{
+    text-align: justify;
+}

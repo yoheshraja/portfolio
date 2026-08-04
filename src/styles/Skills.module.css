@@ -1,0 +1,26 @@
+.skillsContain {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    padding: 30px;
+}
+
+.skillsContain p {
+    background-color: #1E3A5F;
+    border: 1px solid black;
+    padding: 5px;
+    height: 50px;
+    /* width: 100px; */
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skillsContain p:hover {
+
+ transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(59,130,246,.3);  
+}

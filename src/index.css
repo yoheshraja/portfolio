@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+section{
+  min-height: 435px;
+  margin:10px 30px;
+}
+body{
+  background: #0B1120;
+  color: #E5E7EB;
+  font-size: 18px;
+}

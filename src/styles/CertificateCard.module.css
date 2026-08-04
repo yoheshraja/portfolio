@@ -1,0 +1,39 @@
+.certificatesCard{
+    background-color: #1E3A5F;
+    box-shadow:0 10px 30px rgba(59,130,246,.25);
+    height: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+/* .certificatesImage{
+    display: flex;
+    justify-content: center;
+    
+    height: 100px;
+    width: 90%;
+} */
+.certificateImage{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.certificateImage img{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.certiTitle{
+    font-size: 20px;
+}
+.certificatesCard p{
+    margin: 0;
+    line-height: 1.3;
+}
+.certificatePage{
+    color: white;
+}

@@ -1,0 +1,10 @@
+.buildList{
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.buildList li{
+    list-style-position: outside;
+}
+.companyTitle{
+    font-size: 22px;
+}

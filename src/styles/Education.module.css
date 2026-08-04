@@ -1,0 +1,55 @@
+.eduContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.educard{
+   background-color: #1E3A5F;
+    height: 290px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow:0 10px 30px rgba(59,130,246,.25);
+    text-align: justify;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    border-top: 4px solid #38BDF8;
+    padding-top: 20px;
+    padding: 20px;
+    line-height: 2;
+    overflow: visible;
+    
+}
+.educard:hover{
+    transform: translateY(-4px);
+    border: 1px solid #3B82F6;
+}
+.eduTitle{
+    font-size: 22px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+/* .institution{
+    font-size: 18px;
+} */
+.board{
+    font-size: 16px;
+    color: rgb(214, 213, 213);
+}
+.duration{
+    font-size: 15px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+     /* transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(139,92,246,.3); */
