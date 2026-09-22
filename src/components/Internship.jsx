@@ -25,7 +25,6 @@ function Internship() {
 
                 <li>Developed a wallet system to manage user balances and game-related transactions.</li>
 
-                <li>Implemented RD and RF calculation modules to perform accurate financial computations.</li>
             </ul>
         </section></>
     )
