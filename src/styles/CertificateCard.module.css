@@ -5,15 +5,7 @@
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 15px;
-    
 }
-/* .certificatesImage{
-    display: flex;
-    justify-content: center;
-    
-    height: 100px;
-    width: 90%;
-} */
 .certificateImage{
     height: 140px;
     width: 100%;
@@ -36,4 +28,22 @@
 }
 .certificatePage{
     color: white;
+}
+
+@media (max-width: 619px){
+    .certificatesCard{
+        width: 100%;
+        height: auto;
+        min-height: 280px;
+    }
+    .certificateImage{
+        height: 160px;
+    }
+    .certificateImage img{
+        height: 160px;
+        object-fit: cover;
+    }
+    .certiTitle{
+        font-size: 18px;
+    }
 }

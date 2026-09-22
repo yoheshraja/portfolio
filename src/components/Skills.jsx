@@ -3,7 +3,7 @@ import styles from '../styles/Skills.module.css'
 function Skills() {
   return (
     <>
-    <h2>Skills</h2>
+    <h2 className='Heading'>Skills</h2>
     <section className={styles.skillsContain}>
       <p>HTML</p>
       <p>CSS</p>
@@ -12,8 +12,8 @@ function Skills() {
       <p>Node.js</p>
       <p>Express</p>
       <p>MongoDB</p>
-      <p>Java</p>
-      <p>Linux</p>
+      <p>Git</p>
+      <p>GitHub</p>
     </section>
     </>
   )

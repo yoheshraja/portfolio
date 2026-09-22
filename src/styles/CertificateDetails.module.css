@@ -1,13 +1,48 @@
+.Details{
+    text-align: center;
+}
 .Image{
     display: flex;
     justify-content: center;
     align-items: center;
- 
 }
 .Image img{
-      width: 70%;
-      margin: 20px auto;
+    width: 500px;
+    max-width: 90%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 8px;
 }
-.Details h3,p{
+.Details h3,
+.Details p{
     line-height: 1.6;
+}
+.backLink{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3B82F6;
+}
+.backLink:hover{
+    color: white;
+}
+
+@media (min-width: 620px) and (max-width: 1024px){
+    .Image img{
+        width: 400px;
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 619px){
+    .Image img{
+        width: 100%;
+        max-width: 320px;
+        max-height: 320px;
+    }
+    .Details{
+        padding: 0 10px;
+    }
 }

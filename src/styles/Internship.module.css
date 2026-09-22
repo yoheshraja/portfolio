@@ -8,3 +8,13 @@
 .companyTitle{
     font-size: 22px;
 }
+
+@media (max-width: 619px){
+    .buildList{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .companyTitle{
+        font-size: 19px;
+    }
+}

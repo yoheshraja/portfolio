@@ -5,8 +5,9 @@ import styles from '../styles/Certificate.module.css'
 function Certificates() {
   return (
     <>
+    <h2 className='Heading'>Certificates & Achievements</h2>
       <section>
-        <h1>Certificates & Achievements</h1>
+        
         <div className={styles.certificateContainer}>
           {certificates.map((certificate) => (
             <CertificatesCards key={certificate.id} data={certificate} />

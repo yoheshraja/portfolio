@@ -1,26 +1,18 @@
-header{
+.header{
     height: 100px;
     background-color: rgb(111, 84, 230);
     width: 100%;
-    
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  40px;
+    padding: 40px;
+    position: relative;
 }
-
-/* .unorderlist{
-    display: flex;
-    gap: 10px;
-}
-.unorderlist li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-} */
 .title{
     text-decoration: none;
     color: rgb(71, 66, 66);
@@ -30,8 +22,140 @@ a{
     gap: 30px;
     list-style: none;
 }
-.unorderlist a{
+.navLink{
     text-decoration: none;
     color: black;
     font-size: 18px;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s linear;
+}
+.navLink:hover{
+    color: white;
+}
+.activeLink{
+    color: white;
+    font-weight: bold;
+}
+.activeLink::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgb(6, 182, 212), rgb(49, 10, 130));
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 300;
+}
+.bar{
+    width: 26px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+}
+.barOpen1{
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transform: translateY(8px) rotate(45deg);
+    transition: all 0.3s linear;
+}
+.barOpen2{
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.barOpen3{
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transform: translateY(-8px) rotate(-45deg);
+    transition: all 0.3s linear;
+}
+
+.overlay{
+    display: none;
+}
+
+@media (min-width: 620px) and (max-width: 1024px){
+    .nav{
+        padding: 20px;
+    }
+    .unorderlist{
+        gap: 18px;
+    }
+    .navLink{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 619px){
+    .header{
+        height: 70px;
+    }
+    .nav{
+        padding: 15px 20px;
+    }
+    .title h1{
+        font-size: 18px;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .unorderlist{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 240px;
+        background-color: #1E3A5F;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 25px 30px;
+        gap: 25px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+        z-index: 250;
+    }
+    .unorderlist.showMenu{
+        transform: translateX(0);
+    }
+    .navLink{
+        color: white;
+        font-size: 17px;
+    }
+    .activeLink::after{
+        background: linear-gradient(90deg, rgb(245, 69, 69), rgb(160, 200, 255));    }
+    .overlay.showOverlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 200;
+    }
 }

@@ -3,8 +3,8 @@ import styles from '../styles/Education.module.css'
 function Education() {
   return (
     <>
+    <h2 className='Heading'>Education</h2>
     <section>
-    <h1>Education</h1>
     <div className={styles.eduContainer}>
        <div className={styles.educard}>
       <p className={styles.eduTitle}>Bachelor of Science (B.Sc)</p>

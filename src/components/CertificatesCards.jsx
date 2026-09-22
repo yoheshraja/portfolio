@@ -11,7 +11,7 @@ function CertificatesCards({data}) {
       <p>{data.type}</p>
       <p>{data.issued}</p>
       <p>{data.year}</p>
-      <Link to={`/certificate/${data.id}`} target='_blank' className={styles.certificatePage}>view certificate</Link>
+      <Link to={`/certificate/${data.id}`} className={styles.certificatePage}>view certificate</Link>
       
     </div>
   )

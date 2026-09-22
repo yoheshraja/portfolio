@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 100px);
     gap: 20px;
     padding: 30px;
+    justify-content: center;
 }
 
 .skillsContain p {
@@ -10,7 +11,6 @@
     border: 1px solid black;
     padding: 5px;
     height: 50px;
-    /* width: 100px; */
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25);
     display: flex;
     justify-content: center;
@@ -20,7 +20,17 @@
 }
 
 .skillsContain p:hover {
-
- transform: translateY(-4px);
+    transform: translateY(-4px);
     box-shadow: 0 0 20px rgba(59,130,246,.3);  
+}
+
+@media (max-width: 619px){
+    .skillsContain{
+        grid-template-columns: repeat(2, minmax(0, 140px));
+        gap: 12px;
+        padding: 15px;
+    }
+    .skillsContain p{
+        font-size: 14px;
+    }
 }

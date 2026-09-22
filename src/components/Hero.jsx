@@ -18,12 +18,14 @@ function Hero() {
             repeat={4}
           />
           <p className={styles.intro}>I'm a MERN Stack Developer with a B.Sc. degree and a passion for building modern, responsive, and user-friendly web applications.  I enjoy learning new technologies, solving real-world problems, and creating efficient web solutions.</p>
-          <button><a to="../assets/images/R.Yohesh_Raja_resume.pdf" download>Download Resume</a></button>
-          <button>Contact Me</button>
+          <button><a href="../assets/images/R.Yohesh_Raja_resume.pdf" download>Download Resume</a></button>
+          <button onClick={()=>{
+            document.getElementById("contact").scrollIntoView({behavior:"smooth"})
+          }}>Contact Me</button>
         </div>
         <div className={styles.Animation}>
           <div className={styles.profileImage}>
-            <img src="/assets/images/pro5.webp" alt="Image not found" />
+            <img src="/assets/images/R.Yohesh Raja-photo.jpeg" alt="Image not found" />
           </div>
         </div>
       </section>

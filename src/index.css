@@ -4,11 +4,41 @@
   box-sizing: border-box;
 }
 section{
-  min-height: 435px;
+  min-height: 430px;
   margin:10px 30px;
 }
 body{
   background: #0B1120;
   color: #E5E7EB;
   font-size: 18px;
+}
+.Heading{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 620px) and (max-width: 1024px){
+  section{
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 619px){
+  body{
+    font-size: 16px;
+  }
+  section{
+    margin: 10px 15px;
+    min-height: auto;
+  }
+}
+/* In your App.css or index.css */
+body {
+  padding-top: 100px;
+}
+
+@media (max-width: 619px) {
+  body {
+    padding-top: 70px;
+  }
 }

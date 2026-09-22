@@ -1,89 +1,100 @@
-.projectcontain{
+.projectcontain {
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* min-height: 350px; */
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.projectcard{
+
+.projectcard {
+    border: 1px solid rgb(204, 201, 201);
+    width: 300px;
+    height: 370px;
+    padding: 10px;
     background-color: #1E3A5F;
-    height:430px;
-    width: 340px;
     border-radius: 8px;
-    box-shadow:0 10px 30px rgba(59,130,246,.25);
+    box-shadow: 0 10px 30px rgba(59,130,246,.25);
     position: relative;
     text-align: justify;
     display: flex;
     flex-direction: column;
-}
-.projectcard p{
-    /* margin: 10px; */
-    padding: 10px;
-}
-.imageContainer {
-    width: 90%;
-    height: 170px;
-    margin: 10px auto;
-    overflow: hidden;
-    border-radius: 8px;
+    line-height: 1.6;
 }
 
-.projectcard img {
+.imageContainer {
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #0f1c33;
+}
+.imageContainer img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
-/* .projectcard p{
-    margin: 5px ;
-} */
- /* .projectcard button{ */
-    /* position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 20px;
-    bottom: 20px; */
-    /* padding: 5px;
-    border: none;
-    border-radius: 5px;
-    margin: 0 5px;
-    margin-top:30px;
-    opacity: 0;
-    cursor: pointer; */
- /* } */
-/* .projectcard:hover button{
-    transition: all 0.4s ease-in;
-    opacity: 1;
-} */
-.projectcard button a{
-    text-decoration: none;
-    color: black;
-}
-.projectcard:hover{
-     background-color: #3B82F6;
-    color: #FFFFFF;
-    transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(59,130,246,.35);
-    transition: all .3s ease;
-}
+
 .ProTitle{
-    font-size: 22px;
-    font-weight: bold;
+    margin: 8px 0 6px;
 }
+
 .ProDescription{
-    font-size: 17px;
-    line-height: 1.4;
+    margin: 0 0 8px;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.BtnGroup{
-    margin-top: auto;
-    padding: 10px;
+
+.TechStack{
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: rgb(200, 200, 220);
+}
+
+.BtnGroup {
     display: flex;
+    gap: 15px;
+    margin-top: auto;
 }
-.BtnGroup button{
-    padding: 5px;
-    opacity: 0;
+
+.btn {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    border: none;
+    color: black;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(160, 160, 255), rgb(49, 49, 197));
+    transition: all 0.3s linear;
 }
-.projectcard:hover button{
-    transition: all 0.4s ease-in;
-    opacity: 1;
+
+.btn:hover {
+    background: linear-gradient(90deg, rgb(49, 49, 197), rgb(127, 127, 245));
+    color: white;
+}
+
+@media (max-width: 619px){
+    .projectcard{
+        width: 100%;
+        height: auto;
+        min-height: 340px;
+    }
+    .imageContainer{
+        height: 180px;
+        min-height: 180px;
+    }
+    .btn{
+        width: 45%;
+        height: 36px;
+    }
 }

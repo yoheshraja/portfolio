@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '../styles/Internship.module.css'
 function Internship() {
-    return (
+    return (<>
+                    <h2 className='Heading'>Internship</h2>
         <section>
-            <h2>Internship</h2>
             <p className={styles.companyTitle}>Company Name: Free Will Technologies</p>
             <p>Role: Frontend Developer</p>
             <p>Duration: may-June</p>   
@@ -27,7 +27,7 @@ function Internship() {
 
                 <li>Implemented RD and RF calculation modules to perform accurate financial computations.</li>
             </ul>
-        </section>
+        </section></>
     )
 }
 
