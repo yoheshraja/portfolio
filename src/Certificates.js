@@ -52,6 +52,17 @@ const certificates=[
         issued:"SRM Institute of Science & Technology,Tiruchirappalli",
         year:"2026",
         description:"Participated in the Bug Buster event at TECH-A-THON ’25, which focused on identifying and solving programming errors while improving debugging and problem-solving skills."
+    },
+    {
+        id:7,
+        image:"/assets/images/course_certificate.jpeg",
+        title:"MERN Stack",
+        type:"Course Certificate",
+        issued:"ELYSIUM ACADEMY",
+        year:"2026",
+        description:"Successfully completed a MERN Stack Development course, gaining knowledge of building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Learned to create responsive and interactive user interfaces, develop reusable React components, manage application state, and implement server-side functionality using Node.js and Express.js. Gained practical experience in modern web development techniques and application design."
+
+
     }
 ]
 export default certificates
